@@ -125,3 +125,17 @@ npm run build -- ttf::IosevkaZhiZeX00
 ```text
 'Iosevka ZhiZe x00', 'Unifont', 'Unifont Upper', 'Unifont CSUR'
 ```
+
+## Nerd Font
+
+该字体可以通过 Nerd Font 的 patcher 程序增补 Nerd Font 字符。
+
+详情参见 <https://github.com/ryanoasis/nerd-fonts>。
+
+fontforge 可以直接通过 winget 安装，安装后似乎不需要另行配置 Python 和 Python 包（不过我的机器上有 Conda 的 base 环境，不知道这个有没有影响）。
+
+需要注意的是如果要增补全部的 Nerd Font，需要添加参数 `-c`，例如：
+
+```shell
+fontforge -script font-patcher -c PATH_TO_FONT
+```
