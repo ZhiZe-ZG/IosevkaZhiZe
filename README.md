@@ -250,3 +250,12 @@ one:number add:operator two:number
 
 * 简洁：每一个字符都不宜过度复杂，甚至越简单越好。不过该条类似区分性，仅对 ASCII 和扩展的功能模块起效。
 * 统一：同一个书写系统或者系列的符号应当具有统一性，不同的系统之间要有区分度。另外字体整体要有一定的统一性。主要针对 ASCII 和扩展功能模块。
+
+## To Do
+
+* [ ] 参考 Nerd Font 的 patch 脚本写一个 patch 脚本，用于将 Nerd Font 和 Unifont 作为补丁打入。
+* [ ] 增加 Iosevka 的 Bold, Oblique 和 Bold Oblique 生成。
+* [ ] 合成字体时 ASCII 区域引用 Iosevka， 其他 Unicode 区域引用 Unifont， PUA 区域引用 Nerd Font。
+* [ ] 为 Unifont 和 Nerd Font 生成 Bold, Oblique 和 Bold Oblique。
+* [ ] 对 Unifont 和 Nerd Font 的部分字符做调整，尤其是 Nerd Font 的字宽问题。另外还有 Nerd Font 中 Powerline 部分字形由间隙这类小问题的修复。
+* [ ] 更为完整的改动和更新列表。
